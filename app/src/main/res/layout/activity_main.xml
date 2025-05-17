@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/cyan_background"
+    android:padding="24dp">
+
+    <!-- Top Title Text -->
+
+    <!-- Instruction Text -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:gravity="top|left"
+        android:text="MAD mini Project\nP Mokshygna : 22BTAI116\nNaga Vishnu : 22BTAI117\nShaik Umar Farooq : 22BTAI118\nShirish Upadhyay : 22BTAI119"
+        android:textColor="@color/dark_text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press button to increase the number"
+        android:textSize="20sp"
+        android:textColor="@color/dark_text"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Counter Text -->
+    <TextView
+        android:id="@+id/counterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="64sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_text"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/increaseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/cyan_button"
+        android:padding="12dp"
+        android:text="Click Me!"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</LinearLayout>

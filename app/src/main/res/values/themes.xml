@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ClickCounter" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Optional: you can add color overrides or remove this if unused -->
+    </style>
+</resources>
