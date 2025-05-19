@@ -3,35 +3,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_horizontal"
     android:background="@color/cyan_background"
     android:padding="24dp">
 
-    <!-- Top Title Text -->
+    <!-- Top Row with Project Info aligned to right -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22BTAI116\n22BTAI117\n 22BTAI118\n22BTAI119"
+            android:textColor="@color/dark_text"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAlignment="viewEnd"
+            android:gravity="end"
+            android:padding="8dp" />
+    </LinearLayout>
 
     <!-- Instruction Text -->
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="290dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:gravity="top|left"
-        android:text="MAD mini Project\nP Mokshygna : 22BTAI116\nNaga Vishnu : 22BTAI117\nShaik Umar Farooq : 22BTAI118\nShirish Upadhyay : 22BTAI119"
-        android:textColor="@color/dark_text"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
+    <!-- Counter Text -->
     <TextView
         android:id="@+id/instructionText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
         android:text="Press button to increase the number"
-        android:textSize="20sp"
         android:textColor="@color/dark_text"
-        android:layout_marginBottom="24dp" />
+        android:textSize="20sp" />
 
-    <!-- Counter Text -->
     <TextView
         android:id="@+id/counterText"
         android:layout_width="wrap_content"
@@ -40,6 +48,7 @@
         android:textSize="64sp"
         android:textStyle="bold"
         android:textColor="@color/dark_text"
+        android:layout_gravity="center_horizontal"
         android:layout_marginBottom="24dp" />
 
     <!-- Button -->
@@ -47,6 +56,7 @@
         android:id="@+id/increaseButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/cyan_button"
         android:padding="12dp"
